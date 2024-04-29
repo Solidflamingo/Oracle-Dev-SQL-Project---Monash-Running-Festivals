@@ -1,4 +1,4 @@
-### SQL Oracle RDBMS University Project using mock data from Monash University
+### SQL Oracle RDBMS University Project using mock data in relational database built from a logical model
 
 ## Overview
 
@@ -25,8 +25,35 @@ Note that an individual competitor may be supporting a charity as an individual 
 
 ## Breakdown of files:
 
+# cr-schema-insert.sql
+Contains the schema for all City Run event details under a relational model.
+**This file is property of Monash University, do not use for resale.**
+
 # T1-cr-ra.pdf
 Contains queries with relational algebra operations that manipulate the competitor and carnival data.
 
 # T2-cr-insert.sql
-A schema of data 
+SQL query to insert additional mock data into the schema.
+
+# T3-cr-dml.sql 
+SQL queries to manipulate the data generated from the T2-cr-insert.sql.
+
+# T4-cr-queries.sql
+Additional test SQL queries to generate reports from the data including:
+- Registered runner details
+- Register runners who support a charity as an INDIVIDUAL
+- Number of events all runners have completed over two calendar years
+- Total number of entries/participants in specific events
+- All carnivals
+- Team details for the team that ran the most events across all carnivals
+
+# T5-cr-mods.sql
+SQL queries that directly modify the relational database structure
+
+# T6a-cr-JSON.sql
+SQL queries that are used to generate JSON documents of specific data
+
+# T6b-cr-mongo.mongodb.js
+Send JSON data into mongodb with queries to manipulate the data within the JSON documents
+
+

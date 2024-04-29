@@ -1,4 +1,4 @@
-### SQL Oracle RDBMS Project using mock data from Monash University
+### SQL Oracle RDBMS University Project using mock data from Monash University
 
 ## Overview
 

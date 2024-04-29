@@ -1,27 +1,7 @@
-//*****PLEASE ENTER YOUR DETAILS BELOW*****
+
 //T6b-cr-nosql.txt
 
-// ITO Assignment 2 Task 6b
-
-//Student ID: 27565521
-//Student Name: Aleksandar Mitreski
-
-// Comments for your marker:
-
-// ===================================================================================
-// Do not modify or remove any of the comments in this document (items marked with //)
-// ===================================================================================
-
-//Use (connect to) your database - you MUST update xyz001
-//with your authcate username
-
-use("amit36");
-
-
-//(b)
-// PLEASE PLACE REQUIRED MONGODB COMMAND/S FOR THIS PART HERE
-// ENSURE that your query is formatted and has a semicolon
-// (;) at the end of this answer
+use("");
 
 //Drop collection 
 
@@ -53,20 +33,11 @@ db.events.insertMany([
 
 
 //(c)
-// PLEASE PLACE REQUIRED MONGODB COMMAND/S FOR THIS PART HERE
-// ENSURE that your query is formatted and has a semicolon
-// (;) at the end of this answer
-
-// List all documents you added
 
 db.events.find({});
 
 
 //(d)
-// PLEASE PLACE REQUIRED MONGODB COMMAND/S FOR THIS PART HERE
-// ENSURE that your query is formatted and has a semicolon
-// (;) at the end of this answer
-
 
 db.events.find({
     "event.type": "10K",
@@ -80,11 +51,7 @@ db.events.find({
 });
 
 
-
 //(e)
-// PLEASE PLACE REQUIRED MONGODB COMMAND/S FOR THIS PART HERE
-// ENSURE that your query is formatted and has a semicolon
-// (;) at the end of this answer
 
 
 db.events.updateMany(
@@ -94,9 +61,6 @@ db.events.updateMany(
 
 db.events.find({ "carnival_date": "01-Feb-2023" });
 
-
-
-// Illustrate/confirm changes made
 
 
 
